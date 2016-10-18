@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>A fence for the pantorouter</title>
+<style type=text/css>
+    body { font-family: sans-serif; font-size: 100%;}
+    img { margin-right: 12px; margin-top:0px; margin-bottom:4px; border: 0px;}
+</style></head>
+<table align=center cellpadding=0 cellspacing=0><td width=1100>
+<h1>A fence for the pantorouter</h1>
+
+<a href="tenon_fence-b.jpg" bigw=800 bigh=681>
+<img src="tenon_fence.jpg" width=480 height=409 align=left></a>
+People have been asking about "that piece of wood" I had clamped to the table in some of 
+my videos about the pantorouter.
+<p>
+After initial design and testing of the machine, I made a sort of square to use as a fence
+on the pantorouter, which is now part of the plans.
+<p>
+The fence is a simple piece of birch plywood with two slots cut into it, and a piece
+of wood along one edge to align it with the table.
+<p>
+One slot is used for clamping the square down to use it to align the stock for making
+tenons.
+
+</p><br clear=left><p>
+<a href="mortise_fence-b.jpg" bigw=800 bigh=684>
+<img src="mortise_fence.jpg" width=480 height=410 align=left></a>
+The other configuration of this square is to use the other slot, and bring it in from
+the side to use it as a back stop when cutting mortises.
+
+</p><br clear=left><p>
+
+<script type="text/javascript">
+images=document.getElementsByTagName('img')
+parms=[];
+for (a=0;a<images.length;a++){
+  var imgparent=images[a].parentNode;
+  parms[a]={};
+  parms[a].bigsrc=imgparent.getAttribute("href");
+  parms[a].w_o=images[a].width; parms[a].h_o=images[a].height;
+  parms[a].w_b=imgparent.getAttribute("bigw");
+  parms[a].h_b=imgparent.getAttribute("bigh");
+  parms[a].IsBig=false;parms[a].loaded=false;
+  if (parms[a].w_b > 100) imgparent.setAttribute("href","javascript:MakeBig('"+a+"')");
+}
+function Loaded(id){
+  oldimg=images[id];ni=parms[id].newimg;
+  ni.align=oldimg.align;ni.border=oldimg.border;
+  ni.width=oldimg.width;ni.height=oldimg.height;
+  oldimg.parentNode.replaceChild(parms[id].newimg, oldimg);
+  parms[id].loaded=true
+}
+function MakeBig(id){
+  now=new Date().getTime();parms[id].started=now;
+  if (parms[id].IsBig){
+    parms[id].started-=800;ScaleTimer(id,1,2);parms[id].IsBig=false;
+  }else{
+    if (!parms[id].loaded){
+      parms[id].newimg=new Image(parms[id].w_b*2, parms[id].h_b*2)
+      parms[id].newimg.onload=function (){Loaded(id);}
+      parms[id].newimg.src=parms[id].bigsrc;
+    }
+    ScaleTimer(id,0,1);parms[id].IsBig=true;
+  }
+  for (a=0;a<parms.length;a++){
+    if (a!=id&&parms[a].IsBig){
+      parms[a].started=now-800;ScaleTimer(a,1,2);parms[a].IsBig=false;
+} } }
+function ScaleTimer(id, prcdone, maxprc){
+  prcdone+=0.02;
+  prcmin=(new Date().getTime()-parms[id].started)/800;
+  if(prcdone<prcmin)prcdone=prcmin;if(prcdone>maxprc)prcdone=maxprc;
+  sm=(1-Math.cos(prcdone*3.1416))*.5;img=images[id];pm=parms[id];
+  img.width=pm.w_o+(pm.w_b-pm.w_o)*sm+0.1;img.height=pm.h_o+(pm.h_b-pm.h_o)*sm+0.1;
+  if (prcdone<maxprc)setTimeout("ScaleTimer('"+id+"',"+prcdone+","+maxprc+")", 20);
+}
+</script>
