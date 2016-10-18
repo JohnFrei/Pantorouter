@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>Developing the pantorouter concept</title>
+<style type=text/css>
+    body { font-family: sans-serif; font-size: 100%;}
+    img { margin-right: 12px; margin-top:0px; margin-bottom:4px; border: 0px;}
+</style></head>
+<table align=center cellpadding=0 cellspacing=0><td width=1100>
+<h1>Developing the pantorouter concept</h1>
+
+My original goal for developing the pantorouter was to build a machine that would cut
+
+<a href="tenon-b.jpg" bigw=400 bigh=268>
+<img src="tenon.jpg" width=250 height=167 align=right></a>
+
+tenons that are trimmed on all sides, including rounding both ends to perfectly
+fit the rounded slot mortises from a slot mortiser such as my
+<a href="http://woodgears.ca/slot_mortiser/index.html">
+homemade slot mortiser</a>
+<p>
+
+The best way to produce tenons with rounded edges would be to cut them
+with a router.  The router would need to be guided by some sort of template
+system to trace the curves.
+<p>
+There are two systems that I know of that use a router and templates to
+cut rounded tenons.  One is the rather expensive 
+<a href="http://jdstools.com/multi-routeroverview.aspx">JDS multirouter</a>,
+the other a still not very cheap 
+<a href="http://www.leighjigs.com/superfmt.php">Leigh FMT jig</a>
+<p>
+One thing that's interesting about the Leigh FMT jig is that the templates
+have a different shape from the actual tenon because the mechanism stretches
+the tenon along one axis.
+<p>
+<a href="layouts-b.jpg" bigw=800 bigh=550>
+<img src="layouts.jpg" width=480 height=330 align=left></a>
+Seeing that I don't have a machine shop to make accurate metal parts,
+I figured it would make sense to build a machine where the templates are
+bigger than the final tenon.  But unlike the Leigh FMT jig, I wanted 
+my templates to be bigger in both the X and Y axis, so that
+my template would just be a bigger version of the final shape instead of
+some distorted shape.
+<p>
+A good mechanism for stretching and offsetting an image is a pantograph, so
+I decided to make my whole machine based on a pantograph mechanism.  
+That required some thought as to how to go about it.  
+CAD can be very useful for making detailed refinements to a design, 
+but when inventing a totally new mechanism, I prefer to actually play
+with some bits of wood to try it out.
+<p>
+So I started experimenting with the geometry with a compass, ruler, protractor, 
+and some trammel points.
+
+</p><br clear=left><p>
+<a href="first_concept-b.jpg" bigw=800 bigh=536>
+<img src="first_concept.jpg" width=480 height=322 align=left></a>
+My original idea was to have the axis of the router horizontal, with the weight
+of the router supported by the pantograph.  The pantograph's fixed point, or origin
+would be on the left, the router in the middle, and my template to the right.
+<p>
+I cut up some scraps of wood to try out the geometry.  I offset one of the links
+of my pantograph to get it out of the way.
+<p>
+But I found that my horizontal range of motion would be very restricted.
+The pantograph itself allowed the router to move a fair distance,
+but I found that my router would quickly bump up against where I'd want to 
+put the template, so the usable range of motion was much less.  
+Much head scratching ensued.  I realized that I didn't have this problem
+when moving the router in the vertical direction, so maybe I should mount
+the stock vertically?
+
+
+</p><br clear=left><p>
+<a href="changed_orientation-b.jpg" bigw=800 bigh=592>
+<img src="changed_orientation.jpg" width=480 height=355 align=left></a>
+Playing around with my bits of wood, I realized if I turned my pantograph 90
+degrees, so that the template would be above
+the router, I could have a lot of horizontal range of motion without the router
+bumping into my template.  The restriction would now be on the vertical range
+of motion, but I figured horizontal range would be more important.  When cutting
+tenons, the board would typically be horizontal, and much less high (thick)
+than wide.
+<p>
+With this layout, I also wouldn't need to offset the one link anymore.
+So at least in terms of geometry and interference, this concept should
+be a bit simpler than my first idea.
+
+</p><br clear=left><p>
+<a href="prototype_mechanism-b.jpg" bigw=800 bigh=534>
+<img src="prototype_mechanism.jpg" width=480 height=321 align=left></a>
+So I set out to build a proof of concept of the machine.  I used some really
+cheap 3/4" plywood that used to be a packing crate, 
+and some scraps of wood lying around my workshop.
+
+</p><br clear=left><p>
+<a href="prototype_mechanism2-b.jpg" bigw=800 bigh=742>
+<img src="prototype_mechanism2.jpg" width=480 height=445 align=left></a>
+I mounted this on another piece of scrap plywood, and made a frame to go behind
+my mechanism to hold the template.
+
+</p><br clear=left><p>
+<a href="first_tests-b.jpg" bigw=800 bigh=559>
+<img src="first_tests.jpg" width=480 height=336 align=left></a>
+I would also need to build some sort of work table to hold the stock at 
+the right height in front of the router.  But I was still exploring the feasibility
+of the overall concept, so I stacked some boxes in front of my router
+and clamped everything down with some bar clamps.
+<p>
+I also made a simple template and clamped that to the frame with some C clamps.
+
+</p><br clear=left><p>
+<a href="tenon_and_template-b.jpg" bigw=800 bigh=492>
+<img src="tenon_and_template.jpg" width=480 height=295 align=left></a>
+Here's my first tenon, with the template I used to cut it below.
+<p>
+So the concept appeared to be workable.  I was disappointed with the 
+accuracy I got from it, but then again, I had just cobbled together a few 
+rough pieces of wood to test the concept.  I hadn't even attempted to make this
+machine rigid or precise.
+<p>
+I had originally oriented my machine so that the operating lever was to the
+right, similar to how it is on my slot mortiser.
+<p>
+I found the machine a little tiring to operate because I always had to pull up 
+on the operating lever to counteract the weight of my router.  
+I also found myself putting my left hand on the work table to counteract the force.  
+So it would be good to have a hand hold for the left hand somehow.  
+But my full machine would also have plunge lever, so that should also act as
+my left hand hold.
+</p><br clear=left><p>
+<a href="concept-b.png" bigw=800 bigh=595>
+<img src="concept.png" width=480 height=357 align=left></a>
+So I needed a plunge lever to the left of my main operating lever.  The best
+way to achieve that was to move the main operating lever to be on the left side,
+and put the plunge lever behind it.
+<p>
+I also wanted to add some springs to counteract the weight of the router so that
+I wouldn't get tired from pulling up on the operating lever anymore.
+<p>
+Having worked out the feasibility of the concept, I drew up a CAD model of the machine.
+The CAD model was very useful in terms of working out range of motion and interference
+issues with my machine.
+
+
+
+
+
+<br clear=left><p>
+
+<script type="text/javascript">
+images=document.getElementsByTagName('img')
+parms=[];
+for (a=0;a<images.length;a++){
+  var imgparent=images[a].parentNode;
+  parms[a]={};
+  parms[a].bigsrc=imgparent.getAttribute("href");
+  parms[a].w_o=images[a].width; parms[a].h_o=images[a].height;
+  parms[a].w_b=imgparent.getAttribute("bigw");
+  parms[a].h_b=imgparent.getAttribute("bigh");
+  parms[a].IsBig=false;parms[a].loaded=false;
+  if (parms[a].w_b > 100) imgparent.setAttribute("href","javascript:MakeBig('"+a+"')");
+}
+function Loaded(id){
+  oldimg=images[id];ni=parms[id].newimg;
+  ni.align=oldimg.align;ni.border=oldimg.border;
+  ni.width=oldimg.width;ni.height=oldimg.height;
+  oldimg.parentNode.replaceChild(parms[id].newimg, oldimg);
+  parms[id].loaded=true;parms[id].loaded=true;
+}
+function MakeBig(id){
+  now=new Date().getTime();parms[id].started=now;
+  if (parms[id].IsBig){
+    parms[id].started-=800;ScaleTimer(id,1,2);parms[id].IsBig=false;
+  }else{
+    if (!parms[id].loaded){
+      parms[id].newimg=new Image(parms[id].w_b*2, parms[id].h_b*2)
+      parms[id].newimg.onload=function (){Loaded(id);}
+      parms[id].newimg.src=parms[id].bigsrc;
+    }
+    ScaleTimer(id,0,1);parms[id].IsBig=true;
+  }
+  for (a=0;a<parms.length;a++){
+    if (a!=id&&parms[a].IsBig){
+      parms[a].started=now-800;ScaleTimer(a,1,2);parms[a].IsBig=false;
+} } }
+function ScaleTimer(id, prcdone, maxprc){
+  prcdone+=0.02;
+  prcmin=(new Date().getTime()-parms[id].started)/800;
+  if(prcdone<prcmin)prcdone=prcmin;if(prcdone>maxprc)prcdone=maxprc;
+  sm=(1-Math.cos(prcdone*3.1416))*.5;img=images[id];pm=parms[id];
+  img.width=pm.w_o+(pm.w_b-pm.w_o)*sm+0.1;img.height=pm.h_o+(pm.h_b-pm.h_o)*sm+0.1;
+  if (prcdone<maxprc)setTimeout("ScaleTimer('"+id+"',"+prcdone+","+maxprc+")", 20);
+}
+</script>
