@@ -1,0 +1,108 @@
+
+<html>
+<head>
+<title>More photos of the pantorouter</title>
+<style type=text/css>
+    body { font-family: sans-serif; font-size: 100%;}
+    img { margin-right: 12px; margin-top:0px; margin-bottom:4px; border: 0px;}
+</style></head>
+<table align=center cellpadding=0 cellspacing=0><td width=1100>
+<h1>More photos of the pantorouter</h1>
+<b>All photos can be enlarged by clicking on them</b><p>
+</p><a href="front_left-b.jpg" bigw=1000 bigh=777>
+<img src="front_left.jpg" width=480 height=373 align=left></a>
+The pantorouter, front left view.  The router is normally below the table but I rested the guide bearing atop
+of the tenon template for these photos so that the router is closer to a normal operating position.
+<p>
+Also note the on/off switch mounted next to the table.  The router is turned on and off by this switch, not
+the switch on the router itself.  This is an important safety consideration, as it's possible that you will
+accidentally bump the switch on the router itself when moving it around inside the frame.  With the router
+always switched off by the separate switch, bumping the switch on the router body won't turn it on
+unexpectedly.
+<p>
+A router with a slow-start offers additional protection against accidental turn on, as there is enough time
+to get one's hands out of the way as the router spins up.
+<br clear=left><p>
+</p><a href="front_profile-b.jpg" bigw=1000 bigh=890>
+<img src="front_profile.jpg" width=480 height=427 align=left></a>
+Depth stops below the table.  Plenty of room below the table to reach in to apply knobs and nuts to fasten
+things onto the table with.  I didn't fit the table with any T-tracks.  Mounting clamps through holes in the
+table is less convenient, but much sturdier than a T-track, and it avoids having to buy T track.
+<br clear=left><p>
+</p><a href="right_side-b.jpg" bigw=1000 bigh=849>
+<img src="right_side.jpg" width=480 height=407 align=left></a><br clear=left><p>
+</p><a href="left_side-b.jpg" bigw=1000 bigh=762>
+<img src="left_side.jpg" width=480 height=366 align=left></a>
+<br clear=left><p>
+</p><a href="left_max_height-b.jpg" bigw=1000 bigh=750>
+<img src="left_max_height.jpg" width=480 height=360 align=left></a>
+The maximum height that the router can reach above the table is about 10 cm.  But the actual workable height is only
+about 9 centimeters, as the router will typically bump up against any mounted template.
+<br clear=left><p>
+</p><a href="left_low-b.jpg" bigw=1000 bigh=750>
+<img src="left_low.jpg" width=480 height=360 align=left></a>
+When making tenons, it's best to let the tenon overhang the table and set the depth stops such that
+the bit will not cut into the table.  For mortises, however, it's best to put the work piece flush with the
+table's front edge, and plunge into the work piece.
+
+
+<br clear=left><p>
+</p><a href="back-b.jpg" bigw=1000 bigh=902>
+<img src="back.jpg" width=480 height=433 align=left></a>
+The back of the machine.
+Range of motion is limited by the router bumping against the template mount and against the template itself,
+but this still gives about 20 cm (8") of motion.
+<p>
+You may end up bumping the switch of the router when you move it around.  This can be dangerous as it may cause
+the router to turn on unexpectedly.  For this reason, you should turn the router on and off by a separate
+on/off switch, so that accidentally bumping the switch on the router itself will not accidentally turn it on.
+
+<br clear=left><p>
+
+</table>
+
+<script type="text/javascript">
+images=document.getElementsByTagName('img')
+parms=[];
+for (a=0;a<images.length;a++){
+  var imgparent=images[a].parentNode;
+  parms[a]={};
+  parms[a].bigsrc=imgparent.getAttribute("href");
+  parms[a].w_o=images[a].width; parms[a].h_o=images[a].height;
+  parms[a].w_b=imgparent.getAttribute("bigw");
+  parms[a].h_b=imgparent.getAttribute("bigh");
+  parms[a].IsBig=false;parms[a].loaded=false;
+  if (parms[a].w_b > 100) imgparent.setAttribute("href","javascript:MakeBig('"+a+"')");
+}
+function Loaded(id){
+  oldimg=images[id];ni=parms[id].newimg;
+  ni.align=oldimg.align;ni.border=oldimg.border;
+  ni.width=oldimg.width;ni.height=oldimg.height;
+  oldimg.parentNode.replaceChild(parms[id].newimg, oldimg);
+  parms[id].loaded=true
+}
+function MakeBig(id){
+  now=new Date().getTime();parms[id].started=now;
+  if (parms[id].IsBig){
+    parms[id].started-=800;ScaleTimer(id,1,2);parms[id].IsBig=false;
+  }else{
+    if (!parms[id].loaded){
+      parms[id].newimg=new Image(parms[id].w_b*2, parms[id].h_b*2)
+      parms[id].newimg.onload=function (){Loaded(id);}
+      parms[id].newimg.src=parms[id].bigsrc;
+    }
+    ScaleTimer(id,0,1);parms[id].IsBig=true;
+  }
+  for (a=0;a<parms.length;a++){
+    if (a!=id&&parms[a].IsBig){
+      parms[a].started=now-800;ScaleTimer(a,1,2);parms[a].IsBig=false;
+} } }
+function ScaleTimer(id, prcdone, maxprc){
+  prcdone+=0.02;
+  prcmin=(new Date().getTime()-parms[id].started)/800;
+  if(prcdone<prcmin)prcdone=prcmin;if(prcdone>maxprc)prcdone=maxprc;
+  sm=(1-Math.cos(prcdone*3.1416))*.5;img=images[id];pm=parms[id];
+  img.width=pm.w_o+(pm.w_b-pm.w_o)*sm+0.1;img.height=pm.h_o+(pm.h_b-pm.h_o)*sm+0.1;
+  if (prcdone<maxprc)setTimeout("ScaleTimer('"+id+"',"+prcdone+","+maxprc+")", 20);
+}
+</script>
