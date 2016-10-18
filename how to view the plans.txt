@@ -1,0 +1,29 @@
+How to view the pantorouter plans
+=================================
+
+To view the plans, you need to fully extract the entire zip file.
+
+Extracting the zip file should create a folder with the plans in them.
+
+Then navigate into the folder that the zip file was extracted into
+and double click on "index.html"
+
+If you encounter any problems or have questions, please feel free
+
+to email me at: matthias@woodgears.ca
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             p
